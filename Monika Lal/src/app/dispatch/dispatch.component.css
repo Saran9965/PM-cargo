@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.dispatch-form {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.nav-btn {
+    color: #007bff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
+
+.save-btn { background-color: green; color: white; }
+.update-btn { background-color: rgb(155, 154, 154); color: white; }
+.reset-btn { background-color: blue; color: white; }
+.goto-btn { background-color: rgb(147, 147, 145); color: white; }
+.un-dispatch-btn { background-color: rgb(147, 147, 147); color: white; }
+.dispatch-btn { background-color: rgb(136, 138, 138); color: white; }
+.export-btn { background-color: royalblue; color: white; }
+
+.preview-table {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
