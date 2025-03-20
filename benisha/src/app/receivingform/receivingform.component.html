@@ -1,0 +1,98 @@
+<div class="main-container">
+    <div class="header-section">
+        <h3>Receiving From Other Branch</h3>
+        <div class="form-header">
+            <label for="receiving-date" class="date-label">Receiving Date</label>
+            <input type="date" [value]="currentDate"  class="date-input">
+        </div>
+    </div>
+
+       
+        <div class="form-container">
+            
+                <div class="form-group">
+                    <label>Loading Place (Source Branch) *</label>
+                    <select class="custom-select field" (keydown.enter)="moveToNext($event)">
+                        <option value="">Select</option>
+                        <option>Branch 1</option>
+                        <option>Branch 2</option>
+                        <option>Branch 3</option>
+                    </select>
+                
+                
+                    <label>Vehicle No *</label>
+                    <input type="text" placeholder="Enter Vehicle No"  class="field" (keydown.enter)="moveToNext($event)">
+                </div>
+                <div class="form-group">
+                    <label>Driver Name</label>
+                    <input type="text" placeholder="Enter Driver Name" class="field" (keydown.enter)="moveToNext($event)">
+                
+                
+                    <label>Seal No</label>
+                    <input type="text" placeholder="Enter Seal No" class="field" (keydown.enter)="moveToNext($event)">
+                </div>
+                <div id="toaster" class="toaster" tabindex="0">
+                    Success: Received successfully!
+                  </div>
+            
+            <div class="form-footer">
+                <button class="btn primary field" (keydown.enter)="showSuccessPopup($event)">To Be Received</button>
+                <button class="btn reset field" (keydown.enter)="resetFields($event)">Reset</button>
+                <button class="btn disabled field" (keydown.enter)="moveToNext($event)">Go To Receiving</button>
+            </div>
+        </div>
+   
+
+    <!-- Styled Table Container -->
+    <div class="container2">
+        <div class="search-container">
+            <input type="text" id="searchBox" class="search-box" placeholder="Search here...">
+        </div>
+        <div class="nav">
+            <span class="nav-btn" (click)="prevPage()"><< Preview</span>
+            <span class="nav-btn" (click)="nextPage()">Next >></span>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl No</th>
+                        <th>Forwarding Packing List</th>
+                        <th>Receiving Date</th>
+                        <th>Source Branch</th>
+                        <th>Total Pcs</th>
+                        <th>Total Weight</th>
+                        <th>Mode</th>
+                        <th>Received By</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                
+                    <tbody id="tableBody">
+                        <!-- 20 Rows of Data -->
+                        <tr><td>1</td><td>FPList-1</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>2</td><td>FPList-2</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>3</td><td>FPList-3</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>4</td><td>FPList-4</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>5</td><td>FPList-5</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>6</td><td>FPList-6</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>7</td><td>FPList-7</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>8</td><td>FPList-8</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>9</td><td>FPList-9</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>10</td><td>FPList-10</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>11</td><td>FPList-11</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>12</td><td>FPList-12</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>13</td><td>FPList-13</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>14</td><td>FPList-14</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>15</td><td>FPList-15</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>16</td><td>FPList-11</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>17</td><td>FPList-12</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>18</td><td>FPList-13</td><td>2025-03-17</td><td>Branch 1</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>19</td><td>FPList-14</td><td>2025-03-17</td><td>Branch 2</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                        <tr><td>20</td><td>FPList-15</td><td>2025-03-17</td><td>Branch 3</td><td>50</td><td>100kg</td><td>Truck</td><td>John Doe</td><td><button class="action-btn">View</button></td></tr>
+                    </tbody>
+                
+            </table>
+        </div>
+    </div>
+</div>
