@@ -1,0 +1,117 @@
+<div class="container">
+  <h2 class="title">Operation Status Update</h2>
+  <div class="content">
+    <div class="form-container">
+      
+      <h4>Consignment</h4>
+      <div class="date-container">
+        <div class="date-input">
+          <label>From Date</label>
+          <input type="date"  [value]="currentDate" />
+        </div>
+
+        <div class="date-input">
+          <label>To Date</label>
+          <input type="date"  [value]="currentDate" />
+        </div>
+
+        <div class="sbutton">
+          <button class="search-btn" (click)="searchData()">Search</button>
+        </div>
+
+      </div>
+  
+      <div class="table-container">
+        <table  >
+          <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Consignment_No</th>
+                <th>Shipment No</th>
+                <th>Destination Port</th>
+                <th>Origin Warehouse</th>
+                <th>Total Wgt</th>
+                <th>Total Carton</th>   
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="!isSearchClicked">
+              <td colspan="7" class="no-data">No data available</td>
+            </tr>
+
+            <tr *ngFor="let item of consignmentData; let i = index" [hidden]="!isSearchClicked">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.consignmentNo }}</td>
+              <td>{{ item.shipmentNo }}</td>
+              <td>{{ item.destinationPort }}</td>
+              <td>{{ item.originWarehouse }}</td>
+              <td>{{ item.totalWeight }}</td>
+              <td>{{ item.totalCarton }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+    </div>
+  
+    <div class="form-container2" >
+      <div class="background">
+
+        <label>Consignment No</label>
+        <input type="text" class="field" (keydown.enter)="moveToNext($event)" />
+
+        <label>Operation Status</label>
+        <select   class=" field" (keydown.enter)="moveToNext($event)">
+
+          <option value="">-select- </option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+          
+        </select>
+        <div class="icon"></div>
+      
+        <label>Operation Date</label>
+        <input type="date" 
+        [value]="currentDate" class="field" (keydown.enter)="moveToNext($event)"/>
+        
+        <label>Remarks</label>
+        <input type="text" class="field" (keydown.enter)="moveToNext($event)" />
+  
+        <div class="btn">
+          <button class="update-btn field "(keydown.enter)="moveToNext($event)"  >Update</button>
+          <button class="delete-btn field" (keydown.enter)="moveToNext($event)">Delete</button>
+          <button class="cancel-btn field" (keydown.enter)="moveToNext($event)">Cancel</button>
+        </div>
+
+      </div>
+
+      <div class="table-container2">
+        <table>
+          <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Operation Date</th>
+                <th>HAWB status</th>
+                
+                <th>Action</th>   
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of updatedData; let i = index" (click)="editRightTableRow(item, i)">
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.operationDate }}</td>
+                <td>{{ item.hawbStatus }}</td>
+                <td>
+                    <button (click)="editRightTableRow(item, i)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      
+      
+    </div>
+  </div>
+    
+</div>
