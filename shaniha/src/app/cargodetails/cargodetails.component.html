@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM Cargo Booking</title>
+    
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <h3 class="text-center bg-danger text-white p-2">admin - admin</h3>
+        <div class="row">
+          
+            <div class="col-md-6 border p-3">
+                <h5 class="bg-danger text-white p-2">Receiver Side</h5>
+                <div class="mb-2">
+                    <label>ID Type</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label>Sender Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label>Mobile</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+           
+            <div class="col-md-6 border p-3">
+                <h5 class="bg-danger text-white p-2">Receiver Details</h5>
+                <div class="mb-2">
+                    <label>ID Type</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label>Receiver Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label>Mobile</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label>Mobile</label>
+                    <input type="text" class="form-control">
+            </div>
+        </div>
+       
+        <div class="row mt-3">
+            <div class="col-md-12 border p-3">
+                <h5 class="bg-danger text-white p-2">Shipment Details</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>transit type</label>
+                        <select class="form-control">
+                            <option>AIR</option>
+                            <option>SEA</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>To Country</label>
+                        <select class="form-control">
+                            <option>INDIA</option>
+                            <option>USA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row mt-3">
+            <div class="col-md-12 border p-3">
+                <h5 class="bg-danger text-white p-2">Item Details</h5>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>S.N</th>
+                            <th>Item Name</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Val Amt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="number" class="form-control"></td>
+                            <td><input type="number" class="form-control"></td>
+                            <td><input type="number" class="form-control"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+        <div class="row mt-3">
+            <div class="col-md-12 text-end">
+                <button class="btn btn-success">Save & Print</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
