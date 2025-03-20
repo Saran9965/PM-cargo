@@ -1,0 +1,105 @@
+<div class="main-container">
+        <div class="admin-header">
+            <span class="admin-label">admin - admin</span>
+        </div>
+        <div class="header-section">
+            
+            <div class="title-container">
+                <h3>forwarding To Datawarehouse</h3>
+            </div>
+            
+    
+            <div class="date-container">
+                <label for="forwarding-date" class="date-label">Forwarding Date</label>
+                <input type="date" class="date-input">
+            </div>
+        </div>
+    
+        <div class="form-container">
+            <div class="form-group">
+                <label>Destination NO </label>
+                <select class="field" (keydown.enter)="moveToNext($event)">
+                    <option value="">Select</option>
+                    <option>destination 1</option>
+                    <option>destination 2</option>
+                    <option>destination 3</option>
+                </select>
+                <label>Vehicle No </label>
+                <input type="text" placeholder="" class="field" (keydown.enter)="moveToNext($event)">
+            </div>
+            <div class="form-group">
+                <label>Driver Name</label>
+                <input type="text" placeholder="" class="field" (keydown.enter)="moveToNext($event)">
+                <label>Driver Mobile No</label>
+                <input type="text" placeholder="" class="field" (keydown.enter)="moveToNext($event)">
+                <label>Seal No</label>
+                <input type="text" placeholder="" class="field" (keydown.enter)="moveToNext($event)">
+            </div>
+        
+            <div class="button">
+                <button class="stock field" (keydown.enter)="moveToNext($event)">Stock</button>
+                <button class="forward field" (keydown.enter)="moveToNext($event)">To Be Forwarded</button>
+                <button class="reset field" (keydown.enter)="moveToNext($event)"(keydown.enter)="resetFields($event)">Reset</button>
+                <button class="forwarding field"  (keydown.enter)="moveToNext($event)">Go To Forwarding</button>
+                <button class="export field"  (keydown.enter)="moveToNext($event)">Export</button>
+            </div>
+        </div>
+    
+        <div class="container2">
+            <div class="search-container">
+                <input type="text" id="searchBox" class="search-box" placeholder="Search here...">
+            </div>
+            <div class="nav">
+                <span class="nav-btn" (click)="prevPage()"><< Preview</span>
+                <span class="nav-btn" (click)="nextPage()">Next >></span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>Forwarding Manifest No</th>
+                            <th>Forwarding Date</th>
+                            <th>Destination Warehouse</th>
+                            <th>Total Invoice</th>
+                            <th>Total Carton</th>
+                            <th>Total Weight</th>
+                            <th>Mode</th>
+                            <th>Forward By</th>
+                            <th>Seal No</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                        <tbody id="tableBody">
+                            
+                               <tr><td>1</td><td>FMList-1</td><td>2025-03-17</td><td>destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John </td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>2</td><td>FMList-2</td><td>2025-03-17</td><td> destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>3</td><td>FMList-3</td><td>2025-03-17</td><td>destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>4</td><td>FMList-4</td><td>2025-03-17</td><td>destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>5</td><td>FMList-5</td><td>2025-03-17</td><td> destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>6</td><td>FMList-6</td><td>2025-03-17</td><td> destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>7</td><td>FMList-7</td><td>2025-03-17</td><td> destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>8</td><td>FMList-8</td><td>2025-03-17</td><td>destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>9</td><td>FMList-9</td><td>2025-03-17</td><td>destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>10</td><td>FMList-10</td><td>2025-03-17</td><td> destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                            
+                               <tr><td>11</td><td>FMList-11</td><td>2025-03-17</td><td>destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>12</td><td>FMList-12</td><td>2025-03-17</td><td>destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>13</td><td>FMList-13</td><td>2025-03-17</td><td>destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>14</td><td>FMList-14</td><td>2025-03-17</td><td>destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>15</td><td>FMList-15</td><td>2025-03-17</td><td> destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>16</td><td>FMList-11</td><td>2025-03-17</td><td>destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>17</td><td>FMList-12</td><td>2025-03-17</td><td>destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>18</td><td>FMList-13</td><td>2025-03-17</td><td> destination 1</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>19</td><td>FMList-14</td><td>2025-03-17</td><td>destination 2</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                               <tr><td>20</td><td>FMList-15</td><td>2025-03-17</td><td>destination 3</td><td>500</td><td>100kg</td><td>Truck</td><td>John</td><td><button class="action-btn">View</button></td><td>120</td><td>-</td></tr>
+                            
+                            
+                            
+                        </tbody>
+                        
+                </table>
+            
+           </div>
+        </div>
+</div>
