@@ -10,6 +10,9 @@
 4.git commit -m "Your commit message"
 
 5.git push origin main
+    (or)
+git push origin main --force
+
 
 
 
