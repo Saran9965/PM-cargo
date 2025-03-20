@@ -1,0 +1,74 @@
+<div class="main-container">
+
+    <!-- Receiving Approval (Without Container) -->
+    <h2>Receiving Approval</h2>
+
+    <!-- Receiving Approval Form (No Container) -->
+    <div class="form-section">
+        <div class="form-group">
+            <label>Receiving Date</label>
+            <input type="text"[value]="currentDate" class="field" (keydown.enter)="moveToNext($event)" >
+        </div>
+        <div class="form-group">
+            <label>Source <span class="required">*</span></label>
+            <div class="select-container">
+            <select class="field" (keydown.enter)="moveToNext($event)"id="sourceSelect" #sourceSelect>
+                <option value="">Select</option>
+                <option value="Source1">Source 1</option>
+                <option value="Source2">Source 2</option>
+            </select>
+            <div class="arrow-icons">
+                <span (click)="moveUp(sourceSelect)">&#9650;</span> <!-- Up Arrow -->
+            <span (click)="moveDown(sourceSelect)">&#9660;</span> <!-- Down Arrow -->
+            </div>
+            </div>
+        </div>
+        <button class="reset-btn field" (keydown.enter)="resetFields($event)">Reset</button>
+    </div>
+    <!-- Table Preview (In Container) -->
+    <div class="table-preview-container">
+      <div class="table-header">
+        <span class="preview-text" (click)="prevPage()"><< Preview</span>
+        <span class="next-text"(click)="nextPage()">Next >></span>
+    </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Packing List</th>
+                    <th>Receiving Date</th>
+                    <th>Source</th>
+                    <th>Tot Ctn</th>
+                    <th>Tot Wgt</th>
+                    <th>Mode</th>
+                    <th>Booked By</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr><td>1</td><td>PL001</td><td>03/15/2025</td><td>Source 1</td><td>20</td><td>150 kg</td><td>Air</td><td>John</td></tr>
+                <tr><td>2</td><td>PL002</td><td>03/15/2025</td><td>Source 2</td><td>30</td><td>200 kg</td><td>Sea</td><td>Mike</td></tr>
+                <tr><td>3</td><td>PL003</td><td>03/15/2025</td><td>Source 1</td><td>25</td><td>180 kg</td><td>Land</td><td>Anna</td></tr>
+                <tr><td>4</td><td>PL004</td><td>03/15/2025</td><td>Source 2</td><td>40</td><td>250 kg</td><td>Air</td><td>Kate</td></tr>
+                <tr><td>5</td><td>PL005</td><td>03/15/2025</td><td>Source 1</td><td>35</td><td>230 kg</td><td>Sea</td><td>Sam</td></tr>
+                <tr><td>6</td><td>PL006</td><td>03/15/2025</td><td>Source 1</td><td>28</td><td>190 kg</td><td>Land</td><td>Paul</td></tr>
+                <tr><td>7</td><td>PL007</td><td>03/15/2025</td><td>Source 2</td><td>22</td><td>140 kg</td><td>Air</td><td>Mark</td></tr>
+                <tr><td>8</td><td>PL008</td><td>03/15/2025</td><td>Source 1</td><td>32</td><td>220 kg</td><td>Sea</td><td>Jane</td></tr>
+                <tr><td>9</td><td>PL009</td><td>03/15/2025</td><td>Source 2</td><td>37</td><td>240 kg</td><td>Land</td><td>Linda</td></tr>
+                <tr><td>10</td><td>PL010</td><td>03/15/2025</td><td>Source 1</td><td>45</td><td>260 kg</td><td>Air</td><td>Steve</td></tr>
+                <tr><td>11</td><td>PL011</td><td>03/15/2025</td><td>Source 2</td><td>23</td><td>170 kg</td><td>Sea</td><td>Nick</td></tr>
+                <tr><td>12</td><td>PL012</td><td>03/15/2025</td><td>Source 1</td><td>29</td><td>210 kg</td><td>Land</td><td>Amy</td></tr>
+                <tr><td>13</td><td>PL013</td><td>03/15/2025</td><td>Source 2</td><td>33</td><td>220 kg</td><td>Air</td><td>Bruce</td></tr>
+                <tr><td>14</td><td>PL014</td><td>03/15/2025</td><td>Source 1</td><td>26</td><td>195 kg</td><td>Sea</td><td>Lucy</td></tr>
+                <tr><td>15</td><td>PL015</td><td>03/15/2025</td><td>Source 2</td><td>31</td><td>225 kg</td><td>Land</td><td>Tom</td></tr>
+                <tr><td>16</td><td>PL016</td><td>03/15/2025</td><td>Source 1</td><td>34</td><td>235 kg</td><td>Air</td><td>Dan</td></tr>
+                <tr><td>17</td><td>PL017</td><td>03/15/2025</td><td>Source 2</td><td>38</td><td>245 kg</td><td>Sea</td><td>Jess</td></tr>
+                <tr><td>18</td><td>PL018</td><td>03/15/2025</td><td>Source 1</td><td>27</td><td>175 kg</td><td>Land</td><td>Rita</td></tr>
+                <tr><td>19</td><td>PL019</td><td>03/15/2025</td><td>Source 2</td><td>24</td><td>185 kg</td><td>Air</td><td>Carl</td></tr>
+                <tr><td>20</td><td>PL020</td><td>03/15/2025</td><td>Source 1</td><td>30</td><td>205 kg</td><td>Sea</td><td>Ben</td></tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
