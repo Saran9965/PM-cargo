@@ -1,0 +1,109 @@
+<div class="container-fluid bg-light p-3">
+    <div class="row p-3">
+        <div class="col mt-4 fw-bolder fs-4">
+            <p>Forwarding To Warehouse</p>
+        </div>
+
+        <div class="col offset-md-4">
+            <div class="form-group">
+                <label class="fw-bolder">Forwarding Date</label>
+                <input type="date" class="form-control text-danger mt-2" [(ngModel)]="forwardingDate">
+
+            </div>
+        </div>
+
+        <div class="container bg-white rounded mt-3 me-3 p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="fw-bolder">Destination Warehouse</label>
+                        <input type="number" class="form-control mt-2">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="fw-bolder">Driver Name</label>
+                        <input type="text" class="form-control mt-2">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="fw-bolder">Vehicle No</label>
+                        <input type="text" class="form-control mt-2">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="fw-bolder">DriverMobile No</label>
+                        <input type="text" class="form-control mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col offset-md-6">
+                    <div class="form-group">
+                        <label class="fw-bolder">Seal No</label>
+                        <input type="text" class="form-control mt-2" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+                <button type="button" class="btn btn-warning">Stock</button>
+                <button type="submit" class="btn btn-primary">To Be Forwarded</button>
+                <button type="button" class="btn btn-danger offset-md-3">Reset</button>
+                <button type="button" class="btn btn-secondary">Go To Forwarding</button>
+                <button type="button" class="btn btn-secondary">Export</button>
+            </div>
+
+
+        </div>
+        <div class="container bg-white me-3 mt-3 p-3 rounded">
+            <div class="row">
+                <div class="col offset-md-9">
+                    <input type="text" class="form-control" placeholder="search here...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <a>
+                        << preview</a>
+                </div>
+                <div class="col offset-md-10">
+                    <a> Next>></a>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th class="bg-primary">SI No</th>
+                            <th class="bg-primary">Forwarding Manifest No</th>
+                            <th class="bg-primary">Forwarding Date</th>
+                            <th class="bg-primary">Destination Warehouse</th>
+                            <th class="bg-primary">Total Invoice</th>
+                            <th class="bg-primary">Total Carton</th>
+                            <th class="bg-primary">Total Weight</th>
+                            <th class="bg-primary">Mode</th>
+                            <th class="bg-primary">Forward By</th>
+                            <th class="bg-primary">Seal No</th>
+                            <th class="bg-primary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+
+
+                </table>
+            </div>
+        </div>
+
+    </div>
