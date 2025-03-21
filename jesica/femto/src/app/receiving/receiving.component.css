@@ -1,0 +1,10 @@
+.card {
+    border-radius: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .btn {
+    width: 150px;
+  }
+  
