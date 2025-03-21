@@ -1,0 +1,191 @@
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: rgb(130, 87, 87);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.title {
+    text-align: center;
+    color: #337ab7;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h4 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    background: linear-gradient(45deg, #6fa8dc, #3c8dbc);
+    color: rgb(19, 18, 18);
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.date-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: Wrap;
+}
+
+.date-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date-input label {
+    margin-bottom: 2px;
+}
+
+.sbutton {
+    display: flex;
+    align-items: flex-end;
+}
+
+.search-btn {
+    background: green;
+    color: rgb(182, 19, 19);
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.background .btn {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.update-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.table-container{
+    overflow-x:auto;
+    max-height: 500px;
+    width:100%;
+    overflow-y: auto;
+    
+}
+
+.table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 10px;
+    border: 2px solid black;
+    
+}
+    
+td th {
+    
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+    
+th{
+     background: #2c3e50;
+     color: rgb(13, 12, 12);
+     font-size:20px;
+}
+
+.form-container2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:200%;
+    max-width: 600px;
+   
+}
+    
+.background{
+    
+    display: flex;
+    flex-direction: column;
+
+    width:100%;
+    max-width:600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border:1px solid #ddd;
+    border-radius:5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+
+}
+.form-container2 input {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    max-width: 500 px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container2 select {
+    width: 100%;
+    min-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.table-container2{
+    overflow-x: auto;
+    max-width: 200;
+    margin-left: 150px;
+
+}
