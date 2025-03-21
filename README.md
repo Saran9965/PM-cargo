@@ -16,6 +16,6 @@ git push origin main --force
 
 
 
-1.SARAN Dispatch form-[Live Demo](https://dispatch-form.vercel.app/)
+1.SARAN Dispatch form- https://dispatch-form.vercel.app/
 
-2.GOKUL Forwarding to warehouse-[Live Demo](https://femto-eight.vercel.app/)
+2.GOKUL Forwarding to warehouse- https://femto-eight.vercel.app/
