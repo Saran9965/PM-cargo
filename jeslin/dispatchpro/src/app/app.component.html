@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="admin-header">admin - admin</div>
+
+    <div class="dispatch-container">
+        <div class="dispatch-title">Dispatch</div>
+        <div class="dispatch-date">Dispatch Date: <span>03/14/2025</span></div>
+    </div>
+
+    <div class="form-box">
+        <div class="form-container">
+            <div class="left-section">
+                <div class="form-group">
+                    <label for="destination-country">Destination Country:</label>
+                    <select id="destination-country">
+                        <option>Select Country</option>
+                        <option>Finland</option>
+                        <option>America</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destination-port">Destination Port:</label>
+                    <select id="destination-port">
+                        <option>Select Port</option>
+                        <option>London</option>
+                        <option>New York</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-group">
+                    <label for="shipment-mode">Shipment Mode:</label>
+                    <input type="text" id="shipment-mode">
+                </div>
+                <div class="form-group">
+                    <label for="air-shipping-line">Air/Shipping Line:</label>
+                    <input type="text" id="air-shipping-line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-group">
+        <button class="save-btn" enabled>Save</button>
+        <button class="update-btn" enabled>Update</button>
+        <button class="reset-btn" enabled>Reset</button>
+        <button class="dispatch-btn" enabled>GO TO Dispatch</button>
+        <span class="button-gap"></span> 
+        <button class="un-dispatch-btn" enabled>UN Dispatch</button>
+        <button class="dispatch-main-btn" enabled>Dispatch</button>
+        <button class="export-btn" enabled>Export - Clearance Manifest</button>
+    </div>
+
+    <table class="preview-table">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Dispatch Manifest</th>
+                <th>Dispatch Date</th>
+                <th>Destination Port</th>
+                <th>Air/Shipping Line</th>
+                <th>MAWB No</th>
+                <th>Shipment No</th>
+                <th>Total INV</th>
+                <th>Total CTN</th>
+                <th>Total WGT</th>
+                <th>Dispatch By</th>
+                <th>Dispatch Status</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>DM100O1</td><td>2025-03-01</td><td>London</td><td>DHL</td><td>MAWB001</td><td>SHP001</td><td>1</td><td>22</td><td>275kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>2</td><td>DM10002</td><td>2025-03-02</td><td>New York</td><td>FedEx</td><td>MAWB002</td><td>SHP002</td><td>9</td><td>14</td><td>114kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>3</td><td>DM10003</td><td>2025-03-03</td><td>London</td><td>DHL</td><td>MAWB003</td><td>SHP003</td><td>14</td><td>50</td><td>295kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>4</td><td>DM10004</td><td>2025-03-04</td><td>New York</td><td>FedEx</td><td>MAWB004</td><td>SHP004</td><td>10</td><td>51</td><td>140kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>5</td><td>DM10005</td><td>2025-03-05</td><td>London</td><td>DHL</td><td>MAWB005</td><td>SHP005</td><td>19</td><td>11</td><td>590kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>6</td><td>DM10006</td><td>2025-03-06</td><td>New York</td><td>FedEx</td><td>MAWB006</td><td>SHP006</td><td>1</td><td>38</td><td>531kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>7</td><td>DM10007</td><td>2025-03-07</td><td>London</td><td>DHL</td><td>MAWB007</td><td>SHP007</td><td>19</td><td>23</td><td>266kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>8</td><td>DM10008</td><td>2025-03-08</td><td>New York</td><td>FedEx</td><td>MAWB008</td><td>SHP008</td><td>9</td><td>22</td><td>511kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>9</td><td>DM10009</td><td>2025-03-09</td><td>London</td><td>DHL</td><td>MAWB009</td><td>SHP009</td><td>17</td><td>45</td><td>171kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>10</td><td>DM10010</td><td>2025-03-10</td><td>New York</td><td>FedEx</td><td>MAWB010</td><td>SHP010</td><td>19</td><td>37</td><td>103kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>11</td><td>DM10011</td><td>2025-03-11</td><td>London</td><td>DHL</td><td>MAWB011</td><td>SHP011</td><td>14</td><td>22</td><td>275kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>12</td><td>DM10012</td><td>2025-03-12</td><td>New York</td><td>FedEx</td><td>MAWB012</td><td>SHP012</td><td>1</td><td>14</td><td>114kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>13</td><td>DM10013</td><td>2025-03-13</td><td>London</td><td>DHL</td><td>MAWB013</td><td>SHP013</td><td>14</td><td>50</td><td>295kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>14</td><td>DM10014</td><td>2025-03-14</td><td>New York</td><td>FedEx</td><td>MAWB014</td><td>SHP014</td><td>10</td><td>51</td><td>140kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>15</td><td>DM10015</td><td>2025-03-15</td><td>London</td><td>DHL</td><td>MAWB015</td><td>SHP015</td><td>19</td><td>11</td><td>590kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>16</td><td>DM10016</td><td>2025-03-16</td><td>New York</td><td>FedEx</td><td>MAWB016</td><td>SHP016</td><td>17</td><td>38</td><td>531kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>17</td><td>DM10017</td><td>2025-03-17</td><td>London</td><td>DHL</td><td>MAWB017</td><td>SHP017</td><td>9</td><td>23</td><td>266kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>18</td><td>DM10018</td><td>2025-03-18</td><td>New York</td><td>FedEx</td><td>MAWB018</td><td>SHP018</td><td>1</td><td>22</td><td>511kg</td><td>Admin</td><td>Dispatched</td></tr>
+          <tr><td>19</td><td>DM10019</td><td>2025-03-19</td><td>London</td><td>DHL</td><td>MAWB019</td><td>SHP019</td><td>14</td><td>45</td><td>171kg</td><td>Admin</td><td>Pending</td></tr>
+          <tr><td>20</td><td>DM10020/td><td>2025-03-20</td><td>New York</td><td>FedEx</td><td>MAWB020</td><td>SHP020</td><td>10</td><td>37</td><td>103kg</td><td>Admin</td><td>Dispatched</td></tr>
+        </tbody>
+    </table>
+
+    <div class="preview-nav">
+        <button>Preview</button>
+        <button>Next</button>
+    </div>
+
+</body>
+</html>
