@@ -1,7 +1,7 @@
 
 # PM-Cargo
 
-1.git clone <repository-url>
+1.git clone (repository-url)
 
 2.cd <repo>
 
@@ -26,4 +26,4 @@
 
 6.SARAN (Dispatch form) - https://dispatch-form.vercel.app/
 
-8.GOKUL (Forwarding to warehouse) - https://femto-eight.vercel.app/
+7.GOKUL (Forwarding to warehouse) - https://femto-eight.vercel.app/
