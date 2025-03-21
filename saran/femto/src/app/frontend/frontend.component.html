@@ -1,0 +1,87 @@
+<div class="container-fluid bg-light">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <h3 class="text-secondary mt-4">Dispatch</h3>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <label for="dispatchDate" class="form-label text-muted">Dispatch Date</label>
+        <input type="date" id="dispatchDate" [(ngModel)]="todaydate" class="form-control text-danger">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3 bg-white p-4 rounded shadow">
+    <div class="row">
+      <div class="col-md-6">
+        <label for="destinationCountry" class="form-label">Destination Country</label>
+        <select id="destinationCountry" class="form-select">
+          <option value="">Select Country</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="destinationPort" class="form-label">Shipment Mode</label>
+        <input type="text" id="shipmentMode" class="form-control" placeholder="Air / Sea">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <label for="shipmentMode" class="form-label">Destination Port</label>
+        <select id="destinationPort" class="form-select">
+          <option value="">Select Country</option>
+          <option value="NYC">New York</option>
+          <option value="LON">London</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="shippingLine" class="form-label">Air/Shipping Line</label>
+        <input type="text" id="shippingLine" class="form-control" placeholder="Enter shipping line">
+      </div>
+    </div>
+    <div class="mt-4 d-flex flex-wrap justify-content-between align-items-center px-lg-5 px-3">
+      <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary">Update</button>
+        <button class="btn btn-primary">Reset</button>
+        <button class="btn btn-secondary">GO TO Dispatch</button>
+      </div>
+      <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-secondary">UN Dispatch</button>
+        <button class="btn btn-secondary">Dispatch</button>
+        <button class="btn btn-primary">Export-Clearance Manifest</button>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3 bg-white p-3 rounded shadow">
+    <div class="row">
+      <div class="col-md-2 pb-2">
+        <a href="#" class="text-decoration-none text-dark display-8">&laquo; Preview</a>
+      </div>
+      <div class="col text-end">
+        <a href="#" class="text-decoration-none text-dark display-8">Next &raquo;</a>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th class="bg-primary text-white">S.No</th>
+            <th class="bg-primary text-white">Dispatch Manifest</th>
+            <th class="bg-primary text-white">Dispatch Date</th>
+            <th class="bg-primary text-white">Destination Port</th>
+            <th class="bg-primary text-white">Air/Shipping Line</th>
+            <th class="bg-primary text-white">MAWB No</th>
+            <th class="bg-primary text-white">Shipment No</th>
+            <th class="bg-primary text-white">Tot INV</th>
+            <th class="bg-primary text-white">Tot CTN</th>
+            <th class="bg-primary text-white">Tot WGT</th>
+            <th class="bg-primary text-white">Dispatch By</th>
+            <th class="bg-primary text-white">Dispatch Status</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>

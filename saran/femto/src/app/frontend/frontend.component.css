@@ -1,0 +1,9 @@
+.text-center th, 
+.text-center td {
+  text-align: center;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
