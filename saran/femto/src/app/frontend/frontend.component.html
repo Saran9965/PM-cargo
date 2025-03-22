@@ -1,4 +1,4 @@
-<div class="container-fluid bg-light">
+<!-- <div class="container-fluid bg-light">
   <div class="container py-3">
     <div class="row">
       <div class="col-md-8 col-sm-12">
@@ -12,7 +12,6 @@
   </div>
 
   <div class="container mt-3 bg-white p-4 rounded shadow">
-  <form>
     <div class="row">
       <div class="col-md-6">
         <label for="destinationCountry" class="form-label">Destination Country</label>
@@ -43,10 +42,10 @@
     </div>
     <div class="mt-4 d-flex flex-wrap justify-content-between align-items-center px-lg-5 px-3">
       <div class="d-flex flex-wrap gap-2">
-        <button type="button" class="btn btn-success">Save</button>
-        <button type="button" class="btn btn-secondary">Update</button>
-        <button type="reset" class="btn btn-primary">Reset</button>
-        <button type="button" class="btn btn-secondary">GO TO Dispatch</button>
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary">Update</button>
+        <button class="btn btn-primary">Reset</button>
+        <button class="btn btn-secondary">GO TO Dispatch</button>
       </div>
       <div class="d-flex flex-wrap gap-2">
         <button class="btn btn-secondary">UN Dispatch</button>
@@ -54,9 +53,7 @@
         <button class="btn btn-primary">Export-Clearance Manifest</button>
       </div>
     </div>
-  </form>
   </div>
-
   <div class="container mt-3 bg-white p-3 rounded shadow">
     <div class="row">
       <div class="col-md-2 pb-2">
@@ -85,28 +82,113 @@
             <th class="bg-primary text-white">Dispatch Status</th>
           </tr>
         </thead>
-          <tbody>
-            <tr><td>1</td><td>DM-1001</td><td>2025-03-22</td><td>New York</td><td>Delta Airlines</td><td>MAWB12345</td><td>SHIP1001</td><td>25</td><td>50</td><td>1200 kg</td><td>John Doe</td><td>Dispatched</td></tr>
-            <tr><td>2</td><td>DM-1002</td><td>2025-03-22</td><td>London</td><td>British Airways</td><td>MAWB67890</td><td>SHIP1002</td><td>18</td><td>40</td><td>950 kg</td><td>Jane Smith</td><td>Pending</td></tr>
-            <tr><td>3</td><td>DM-1003</td><td>2025-03-21</td><td>New York</td><td>FedEx Cargo</td><td>MAWB11122</td><td>SHIP1003</td><td>30</td><td>60</td><td>1350 kg</td><td>Michael Johnson</td><td>Delayed</td></tr>
-            <tr><td>4</td><td>DM-1004</td><td>2025-03-20</td><td>London</td><td>Emirates Cargo</td><td>MAWB22233</td><td>SHIP1004</td><td>22</td><td>48</td><td>1150 kg</td><td>Sarah Lee</td><td>Dispatched</td></tr>
-            <tr><td>5</td><td>DM-1005</td><td>2025-03-19</td><td>New York</td><td>DHL Express</td><td>MAWB33344</td><td>SHIP1005</td><td>28</td><td>55</td><td>1280 kg</td><td>Robert Brown</td><td>Pending</td></tr>
-            <tr><td>6</td><td>DM-1006</td><td>2025-03-18</td><td>London</td><td>UPS Freight</td><td>MAWB44455</td><td>SHIP1006</td><td>20</td><td>38</td><td>980 kg</td><td>Emily Davis</td><td>Delayed</td></tr>
-            <tr><td>7</td><td>DM-1007</td><td>2025-03-17</td><td>New York</td><td>Maersk Line</td><td>MAWB55566</td><td>SHIP1007</td><td>32</td><td>62</td><td>1400 kg</td><td>William Taylor</td><td>Dispatched</td></tr>
-            <tr><td>8</td><td>DM-1008</td><td>2025-03-16</td><td>London</td><td>Cathay Pacific</td><td>MAWB66677</td><td>SHIP1008</td><td>26</td><td>53</td><td>1250 kg</td><td>Jessica Wilson</td><td>Pending</td></tr>
-            <tr><td>9</td><td>DM-1009</td><td>2025-03-15</td><td>New York</td><td>Singapore Airlines</td><td>MAWB77788</td><td>SHIP1009</td><td>19</td><td>42</td><td>1020 kg</td><td>Daniel Harris</td><td>Delayed</td></tr>
-            <tr><td>10</td><td>DM-1010</td><td>2025-03-14</td><td>London</td><td>Qatar Airways</td><td>MAWB88899</td><td>SHIP1010</td><td>24</td><td>49</td><td>1100 kg</td><td>Laura Martinez</td><td>Dispatched</td></tr>
-            <tr><td>11</td><td>DM-1011</td><td>2025-03-13</td><td>New York</td><td>Hapag-Lloyd</td><td>MAWB99900</td><td>SHIP1011</td><td>33</td><td>64</td><td>1450 kg</td><td>Steven White</td><td>Pending</td></tr>
-            <tr><td>12</td><td>DM-1012</td><td>2025-03-12</td><td>London</td><td>Korean Air Cargo</td><td>MAWB00011</td><td>SHIP1012</td><td>27</td><td>52</td><td>1220 kg</td><td>Rebecca Clark</td><td>Delayed</td></tr>
-            <tr><td>13</td><td>DM-1013</td><td>2025-03-11</td><td>New York</td><td>Lufthansa Cargo</td><td>MAWB11122</td><td>SHIP1013</td><td>21</td><td>39</td><td>970 kg</td><td>Matthew Anderson</td><td>Dispatched</td></tr>
-            <tr><td>14</td><td>DM-1014</td><td>2025-03-10</td><td>London</td><td>Turkish Airlines Cargo</td><td>MAWB22233</td><td>SHIP1014</td><td>29</td><td>58</td><td>1300 kg</td><td>Sophia Hernandez</td><td>Pending</td></tr>
-            <tr><td>15</td><td>DM-1015</td><td>2025-03-09</td><td>New York</td><td>ANA Cargo</td><td>MAWB33344</td><td>SHIP1015</td><td>23</td><td>45</td><td>1080 kg</td><td>Benjamin Lewis</td><td>Delayed</td></tr>
-            <tr><td>16</td><td>DM-1016</td><td>2025-03-08</td><td>London</td><td>Asiana Cargo</td><td>MAWB44455</td><td>SHIP1016</td><td>31</td><td>61</td><td>1380 kg</td><td>Emma Robinson</td><td>Dispatched</td></tr>
-            <tr><td>17</td><td>DM-1017</td><td>2025-03-07</td><td>New York</td><td>Etihad Cargo</td><td>MAWB55566</td><td>SHIP1017</td><td>35</td><td>70</td><td>1500 kg</td><td>Oliver Scott</td><td>Pending</td></tr>
-            <tr><td>18</td><td>DM-1018</td><td>2025-03-06</td><td>London</td><td>China Airlines Cargo</td><td>MAWB66677</td><td>SHIP1018</td><td>17</td><td>36</td><td>900 kg</td><td>Ava Walker</td><td>Delayed</td></tr>
-            <tr><td>19</td><td>DM-1019</td><td>2025-03-05</td><td>New York</td><td>Thai Airways Cargo</td><td>MAWB77788</td><td>SHIP1019</td><td>34</td><td>68</td><td>1480 kg</td><td>Lucas Young</td><td>Dispatched</td></tr>
-            <tr><td>20</td><td>DM-1020</td><td>2025-03-04</td><td>London</td><td>Thai Airways Cargo</td><td>MAWB837188</td><td>SHIP1020</td><td>31</td><td>70</td><td>1250 kg</td><td>Johnson</td><td>Pending</td></tr>
-          </tbody>
       </table>
     </div>
-  </div>  
+  </div> -->
+
+
+  <div class="container-fluid bg-light">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <h3 class="text-secondary mt-4">Dispatch</h3>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <label for="dispatchDate" class="form-label text-muted">Dispatch Date</label>
+          <input type="date" id="dispatchDate" [(ngModel)]="todaydate" class="form-control text-danger" (keydown.enter)="focusNext(destinationCountry)">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container mt-3 bg-white p-4 rounded shadow">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="destinationCountry" class="form-label">Destination Country</label>
+          <input type="number" id="destinationCountry" class="form-control" placeholder="Enter the Destination Country" #destinationCountry (keydown.enter)="focusNext(shipmentMode)">
+        </div>
+        <div class="col-md-6">
+          <label for="shipmentMode" class="form-label">Shipment Mode</label>
+          <input type="number" id="shipmentMode" class="form-control" placeholder="Air / Sea" #shipmentMode (keydown.enter)="focusNext(DestinationPort)">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <label for="Destination Port" class="form-label">Destination Port</label>
+          <input type="number" id="Destination Port" class="form-control" placeholder="Enter the Destination Port" #DestinationPort (keydown.enter)="focusNext(shippingLine)">
+        </div>
+        <div class="col-md-6">
+          <label for="shippingLine" class="form-label">Air/Shipping Line</label>
+          <input type="number" id="shippingLine" class="form-control" placeholder="Enter shipping line" #shippingLine>
+        </div>
+      </div>
+      <div class="mt-4 d-flex flex-wrap justify-content-between align-items-center px-lg-5 px-3">
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-secondary">Update</button>
+          <button type="reset" class="btn btn-primary">Reset</button>
+          <button type="button" class="btn btn-secondary">GO TO Dispatch</button>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-secondary">UN Dispatch</button>
+          <button class="btn btn-secondary">Dispatch</button>
+          <button class="btn btn-primary">Export-Clearance Manifest</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  
+    <div class="container mt-3 bg-white p-3 rounded shadow">
+      <div class="row">
+        <div class="col-md-2 pb-2">
+          <a href="#" class="text-decoration-none text-dark display-8">&laquo; Preview</a>
+        </div>
+        <div class="col text-end">
+          <a href="#" class="text-decoration-none text-dark display-8">Next &raquo;</a>
+        </div>
+      </div>
+  
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th class="bg-primary text-white">S.No</th>
+              <th class="bg-primary text-white">Dispatch Manifest</th>
+              <th class="bg-primary text-white">Dispatch Date</th>
+              <th class="bg-primary text-white">Destination Port</th>
+              <th class="bg-primary text-white">Air/Shipping Line</th>
+              <th class="bg-primary text-white">MAWB No</th>
+              <th class="bg-primary text-white">Shipment No</th>
+              <th class="bg-primary text-white">Tot INV</th>
+              <th class="bg-primary text-white">Tot CTN</th>
+              <th class="bg-primary text-white">Tot WGT</th>
+              <th class="bg-primary text-white">Dispatch By</th>
+              <th class="bg-primary text-white">Dispatch Status</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr><td>1</td><td>DM-1001</td><td>2025-03-22</td><td>New York</td><td>Delta Airlines</td><td>MAWB12345</td><td>SHIP1001</td><td>25</td><td>50</td><td>1200 kg</td><td>John Doe</td><td>Dispatched</td></tr>
+              <tr><td>2</td><td>DM-1002</td><td>2025-03-22</td><td>London</td><td>British Airways</td><td>MAWB67890</td><td>SHIP1002</td><td>18</td><td>40</td><td>950 kg</td><td>Jane Smith</td><td>Pending</td></tr>
+              <tr><td>3</td><td>DM-1003</td><td>2025-03-21</td><td>New York</td><td>FedEx Cargo</td><td>MAWB11122</td><td>SHIP1003</td><td>30</td><td>60</td><td>1350 kg</td><td>Michael Johnson</td><td>Delayed</td></tr>
+              <tr><td>4</td><td>DM-1004</td><td>2025-03-20</td><td>London</td><td>Emirates Cargo</td><td>MAWB22233</td><td>SHIP1004</td><td>22</td><td>48</td><td>1150 kg</td><td>Sarah Lee</td><td>Dispatched</td></tr>
+              <tr><td>5</td><td>DM-1005</td><td>2025-03-19</td><td>New York</td><td>DHL Express</td><td>MAWB33344</td><td>SHIP1005</td><td>28</td><td>55</td><td>1280 kg</td><td>Robert Brown</td><td>Pending</td></tr>
+              <tr><td>6</td><td>DM-1006</td><td>2025-03-18</td><td>London</td><td>UPS Freight</td><td>MAWB44455</td><td>SHIP1006</td><td>20</td><td>38</td><td>980 kg</td><td>Emily Davis</td><td>Delayed</td></tr>
+              <tr><td>7</td><td>DM-1007</td><td>2025-03-17</td><td>New York</td><td>Maersk Line</td><td>MAWB55566</td><td>SHIP1007</td><td>32</td><td>62</td><td>1400 kg</td><td>William Taylor</td><td>Dispatched</td></tr>
+              <tr><td>8</td><td>DM-1008</td><td>2025-03-16</td><td>London</td><td>Cathay Pacific</td><td>MAWB66677</td><td>SHIP1008</td><td>26</td><td>53</td><td>1250 kg</td><td>Jessica Wilson</td><td>Pending</td></tr>
+              <tr><td>9</td><td>DM-1009</td><td>2025-03-15</td><td>New York</td><td>Singapore Airlines</td><td>MAWB77788</td><td>SHIP1009</td><td>19</td><td>42</td><td>1020 kg</td><td>Daniel Harris</td><td>Delayed</td></tr>
+              <tr><td>10</td><td>DM-1010</td><td>2025-03-14</td><td>London</td><td>Qatar Airways</td><td>MAWB88899</td><td>SHIP1010</td><td>24</td><td>49</td><td>1100 kg</td><td>Laura Martinez</td><td>Dispatched</td></tr>
+              <tr><td>11</td><td>DM-1011</td><td>2025-03-13</td><td>New York</td><td>Hapag-Lloyd</td><td>MAWB99900</td><td>SHIP1011</td><td>33</td><td>64</td><td>1450 kg</td><td>Steven White</td><td>Pending</td></tr>
+              <tr><td>12</td><td>DM-1012</td><td>2025-03-12</td><td>London</td><td>Korean Air Cargo</td><td>MAWB00011</td><td>SHIP1012</td><td>27</td><td>52</td><td>1220 kg</td><td>Rebecca Clark</td><td>Delayed</td></tr>
+              <tr><td>13</td><td>DM-1013</td><td>2025-03-11</td><td>New York</td><td>Lufthansa Cargo</td><td>MAWB11122</td><td>SHIP1013</td><td>21</td><td>39</td><td>970 kg</td><td>Matthew Anderson</td><td>Dispatched</td></tr>
+              <tr><td>14</td><td>DM-1014</td><td>2025-03-10</td><td>London</td><td>Turkish Airlines Cargo</td><td>MAWB22233</td><td>SHIP1014</td><td>29</td><td>58</td><td>1300 kg</td><td>Sophia Hernandez</td><td>Pending</td></tr>
+              <tr><td>15</td><td>DM-1015</td><td>2025-03-09</td><td>New York</td><td>ANA Cargo</td><td>MAWB33344</td><td>SHIP1015</td><td>23</td><td>45</td><td>1080 kg</td><td>Benjamin Lewis</td><td>Delayed</td></tr>
+              <tr><td>16</td><td>DM-1016</td><td>2025-03-08</td><td>London</td><td>Asiana Cargo</td><td>MAWB44455</td><td>SHIP1016</td><td>31</td><td>61</td><td>1380 kg</td><td>Emma Robinson</td><td>Dispatched</td></tr>
+              <tr><td>17</td><td>DM-1017</td><td>2025-03-07</td><td>New York</td><td>Etihad Cargo</td><td>MAWB55566</td><td>SHIP1017</td><td>35</td><td>70</td><td>1500 kg</td><td>Oliver Scott</td><td>Pending</td></tr>
+              <tr><td>18</td><td>DM-1018</td><td>2025-03-06</td><td>London</td><td>China Airlines Cargo</td><td>MAWB66677</td><td>SHIP1018</td><td>17</td><td>36</td><td>900 kg</td><td>Ava Walker</td><td>Delayed</td></tr>
+              <tr><td>19</td><td>DM-1019</td><td>2025-03-05</td><td>New York</td><td>Thai Airways Cargo</td><td>MAWB77788</td><td>SHIP1019</td><td>34</td><td>68</td><td>1480 kg</td><td>Lucas Young</td><td>Dispatched</td></tr>
+              <tr><td>20</td><td>DM-1020</td><td>2025-03-04</td><td>London</td><td>Thai Airways Cargo</td><td>MAWB837188</td><td>SHIP1020</td><td>31</td><td>70</td><td>1250 kg</td><td>Johnson</td><td>Pending</td></tr>
+            </tbody>
+        </table>
+      </div>
+    </div>  
+  
